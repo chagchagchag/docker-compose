@@ -33,6 +33,7 @@ services:
       - "mode=standalone"
     ports:
       - 6379:6379
+    platform: linux/amd64
     links:
       - example-redis-commander
     networks:
@@ -47,6 +48,7 @@ services:
     #      - REDIS_HOST=redis-normal:redis:16379
     ports:
       - 38081:8081
+    platform: linux/amd64
 networks:
   example-network:
     external: true
