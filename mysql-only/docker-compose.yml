@@ -21,3 +21,4 @@ services:
       - --collation-server=utf8mb4_unicode_ci
     volumes:
       - ./init/:/docker-entrypoint-initdb.d/
+      - app_db:/var/lib/mysql
